@@ -1,8 +1,8 @@
 cask "inferaft-code" do
-  version "0.1.0"
-  sha256 "72068f1e5bf5bca4468b99985e955e11547fae218ccd0b5cbd430431a341d9e5"
+  version "0.1.1"
+  sha256 "495fb6c5e2ac1c501dd216c41c4a16529226de1f0613b29cd2e40123e76352ad"
 
-  url "https://github.com/inferaft/homebrew-tap/releases/download/inferaft-code-v0.1.0/inferaft-code-0.1.0-darwin-arm64.tar.gz"
+  url "https://github.com/inferaft/homebrew-tap/releases/download/inferaft-code-v0.1.1/inferaft-code-0.1.1-darwin-arm64.tar.gz"
   name "Inferaft Code"
   desc "Terminal coding agent for the Inferaft model catalog"
   homepage "https://inferaft.com/"
