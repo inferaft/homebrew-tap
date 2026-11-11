@@ -15,9 +15,9 @@ cask "inferaft-code" do
 
   # The binary is ad-hoc signed, not notarized: without this the quarantine
   # flag Homebrew sets on downloads makes Gatekeeper refuse to run it.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-dr", "com.apple.quarantine", "#{staged_path}/inferaft"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{staged_path}}/inferaft"],
+        must_succeed: false
   end
 end
