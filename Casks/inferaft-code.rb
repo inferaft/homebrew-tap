@@ -1,6 +1,6 @@
 cask "inferaft-code" do
-  version "1.0.1"
-  sha256 "1d5663357f5126c6dbe9efb0edfd766469dfbb19babc6b96c6b3411c5539430c"
+  version "1.0.2"
+  sha256 "c0774aa13df1e1e761e7421024ecec50843cfa545cb0350b92589270223826f6"
 
   url "https://github.com/inferaft/homebrew-tap/releases/download/inferaft-code-v#{version}/inferaft-code-#{version}-darwin-arm64.tar.gz"
   name "Inferaft Code"
@@ -12,6 +12,8 @@ cask "inferaft-code" do
   depends_on :macos
 
   binary "inferaft"
+  # A short name for the same binary.
+  binary "inferaft", target: "ic"
 
   # The binary is ad-hoc signed, not notarized: without this the quarantine
   # flag Homebrew sets on downloads makes Gatekeeper refuse to run it.
