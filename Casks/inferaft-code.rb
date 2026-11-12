@@ -1,6 +1,6 @@
 cask "inferaft-code" do
-  version "1.0.2"
-  sha256 "c0774aa13df1e1e761e7421024ecec50843cfa545cb0350b92589270223826f6"
+  version "1.0.3"
+  sha256 "2c75eee8bcef55c5bfa0dfd82e6276255cbd0f27a7d9e945277e9940bb90e27c"
 
   url "https://github.com/inferaft/homebrew-tap/releases/download/inferaft-code-v#{version}/inferaft-code-#{version}-darwin-arm64.tar.gz"
   name "Inferaft Code"
